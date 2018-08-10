@@ -136,10 +136,14 @@ public class Main extends Application {
                         }
                     }
                     else {
-                        alert.setTitle("Warning");
-                        alert.setHeaderText(null);
-                        alert.setContentText("Login already exists.");
-                        alert.showAndWait();
+                        ResultSet compareLogin = statement.executeQuery("SELECT * FROM users WHERE login=\'"
+                                + loginField1.getText() + "\'");
+                        if (compareLogin.next()) {
+                            alert.setTitle("Warning");
+                            alert.setHeaderText(null);
+                            alert.setContentText("Login already exists.");
+                            alert.showAndWait();
+                        }
                     }
                 } catch (SQLException e1) {e1.printStackTrace();}
             });
