@@ -160,30 +160,36 @@ public class Main extends Application {
                     final Label completedLabel = new Label("Completed Games");
                     completedLabel.setStyle("-fx-text-fill: #ffffff;" +
                             "-fx-font-size: 16px;");
-                    final Label currentLabel = new Label("Curent Games");
+                    completedLabel.setPrefSize(300, 40);
+                    completedLabel.setAlignment(Pos.CENTER);
+                    final Label currentLabel = new Label("Current Games");
                     currentLabel.setStyle("-fx-text-fill: #ffffff;" +
                             "-fx-font-size: 16px;");
+                    currentLabel.setPrefSize(300, 40);
+                    currentLabel.setAlignment(Pos.CENTER);
                     final Label mainLabel = new Label("Games Catalogue");
                     mainLabel.setStyle("-fx-text-fill: #ffffff;" +
                             "-fx-font-size: 16px;");
+                    mainLabel.setPrefSize(900, 40);
+                    mainLabel.setAlignment(Pos.CENTER);
                     ScrollPane completed_pane = new ScrollPane();
                     completed_pane.setPrefSize(300, 800);
                     completed_pane.setLayoutY(40);
-                    completed_pane.setPadding(new Insets(80, 1200, 0, 0));
+                    completed_pane.setPadding(new Insets(40, 1200, 0, 0));
                     completed_pane.setStyle("-fx-background-color: #303030;");
 
                     ScrollPane current_pane = new ScrollPane();
                     current_pane.setPrefSize(300, 800);
                     current_pane.setLayoutY(40);
                     current_pane.setLayoutX(300);
-                    current_pane.setPadding(new Insets(80, 900, 0, 300));
+                    current_pane.setPadding(new Insets(40, 900, 0, 300));
                     current_pane.setStyle("-fx-background-color: #b82121;");
 
                     ScrollPane main_pane = new ScrollPane();
                     main_pane.setPrefSize(900, 800);
                     main_pane.setLayoutY(40);
                     main_pane.setLayoutX(600);
-                    main_pane.setPadding(new Insets(80,0, 0, 1200));
+                    main_pane.setPadding(new Insets(40,0, 0, 1200));
                     main_pane.setStyle("-fx-background-color: #2156b8;");
 
                     Pane completed_pane_head = new Pane();
