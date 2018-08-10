@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1500.0" style="-fx-background-color: #444242;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="completed_head_pane" prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #8c8c8c;" />
+         <Pane id="completed_pane" fx:id="CompletedGames" layoutY="75.0" prefHeight="806.0" prefWidth="300.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1200.0" AnchorPane.topAnchor="75.0" />
+      <AnchorPane id="current_head_pane" layoutX="300.0" prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #8c8c8c;" />
+      <Pane id="current_pane" fx:id="CompletedGames1" layoutX="300.0" layoutY="75.0" prefHeight="806.0" prefWidth="300.0" />
+      <AnchorPane id="main_head_pane" layoutX="600.0" prefHeight="75.0" prefWidth="901.0" style="-fx-background-color: #8c8c8c;" />
+      <Pane id="main_pane" layoutX="600.0" layoutY="75.0" prefHeight="806.0" prefWidth="901.0">
+         <children>
+            <Label fx:id="test_label" layoutX="14.0" layoutY="14.0" prefHeight="387.0" prefWidth="505.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
